@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11981726",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e972",
+      "unicode_decimal": 59762
+    },
+    {
+      "icon_id": "17990796",
+      "name": "项目",
+      "font_class": "xiangmu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#uLink {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+#uLink:visited {
+    color: black;
+    text-decoration: none;
+}
+#uLink:hover {
+    color: #007bff;
+    text-decoration: underline;
+    text-shadow: 0 0 6px rgba(51, 153, 255, 0.5);
+}
+
+#nav {
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    padding: 2vh;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 1.0);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#navContentFirst {
+    font-size: 2vh;
+    margin-left: 10vh;
+    margin-right: 38vh;
+}
+
+#navContentRest {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+}
+
+#navContentSpan {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#currentPage {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 0.5vh 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.pageLink {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5vh 2vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pageLink:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+#photoBlock {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/project/sea3.JPG);
+    background-size: cover;
+    background-position: center 75%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease, background-position 2s ease;
+}
+
+#photoBlock.show {
+    opacity: 1;
+    background-position: center 85%;
+}
+
+#mainContent {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projAndInfo {
+    width: fit-content;
+    height: fit-content;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#projectBlock {
+    width: fit-content;
+    height: fit-content;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.projectRowContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+.projectContainer {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.projectContainer.show {
+    opacity: 1;
+}
+
+.projImg {
+    width: 35vh;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.projImg.show {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.5);
+    transform: scale(1.05);
+    filter: blur(6px);
+}
+
+.projDesribe {
+    width: 35vh;
+    height: 23.4vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    padding: 2vh;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.projDesribe.show {
+    opacity: 1;
+}
+
+.projDesribeInfo {
+    font-size: 1.8vh;
+    color: #CCCCCC;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projDesribeInfoTitle {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.projDesribeInfo>a {
+    width: fit-content;
+    height: fit-content;
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.icon-github {
+    font-size: 6vh;
+    transition: color 0.3s ease;
+}
+
+.icon-github:hover {
+    color: #ff9800;
+}
+
+#verticalLine {
+    height: 40vh;
+    width: 3px;
+    margin: 0 1vh 0 2vh;
+    background-color: #007bff;
+    border-radius: 100px;
+    opacity: 0;
+    transform: scaleY(0.1);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#verticalLine.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#projInfoBlock {
+    align-self: flex-start;
+    width: 65vh;
+    height: fit-content;
+    padding: 3vh;
+}
+
+#projInfo1, #projInfo2, #projInfo3, #projInfo4 {
+    display: none;
+}
+
+.icon-xiangmu {
+    color: #007bff;
+    font-size: 3vh;
+    margin-right: 1vh;
+}
+
+.projInfoTitle {
+    font-size: 3vh;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.projInfoSubtitle {
+    font-size: 2vh;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.projectInfoContent {
+    font-size: 1.8vh;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.projInfoTitle.show, .projInfoSubtitle.show, .projectInfoContent.show {
+    opacity: 1;
+    transform: translateY(0px);
+}

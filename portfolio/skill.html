@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./iconfont/skill_iconfont/iconfont.css">
+    <link rel="stylesheet" href="./style/skill.css">
+
+</head>
+<body>
+
+    <div id="nav">
+        <ul type="none">
+            <li id="navContentFirst">Personal <span id="navContentSpan">Information</span></li>
+            <div id="navContentRest">
+                <li class="navContent"><a href="home.html" class="pageLink">Home</a></li>
+                <li class="navContent"><a href="skill.html" id="currentPage">Skill</a></li>
+                <li class="navContent"><a href="project.html" class="pageLink">Project</a></li>
+                <li class="navContent"><a href="hobbies.html" class="pageLink">hobbies</a></li>
+                <li class="navContent"><a href="photograph.html" class="pageLink">photograph</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div id="photoBlock">
+    </div>
+
+    <div id="mainContainer">
+        <div id="mainContent">
+            <div id="skillBlock">
+                <div id="photoAndInfo">
+                    <div id="photo"></div>
+                    <div id="infoContent">
+                        <p>HE BINGXIANG</p>
+                        <p>Sophomore Student</p>
+                        <p>Big Data</p>
+                    </div>
+                </div>
+                <hr class="skillCutLine">
+                <div>
+                    <p class="skillTitle"><span class="iconfont icon-chuizhi"></span>EDUCATION BACKGROUND</p>
+                    <div class="university"><p>University of Wollongong</p><p>(04.2025 - 04.2027)</p></div>
+                    <p class="eduQualification">Bachelor of Computer Science</p>
+                    <p class="eduContent">GPA: <span id="uowGPA">7.0</span> / 7.0 (High Distinction) | TOP 10%</p>
+                    <p class="eduContent">Core Course: Object Oriented Design & Programming, Web Technology, Algorithms & Data Sturcture and Database ...</p>
+                    <br>
+                    <div class="university"><p>Singapore Institute of Management</p> <p>(04.2024 - 04.2025)</p></div>
+                    <p class="eduQualification">Diploma in Information Technology</p>
+                    <p class="eduContent">GPA: <span id="simGPA">3.83</span> / 4.0 | TOP 10%</p>
+                    <p class="eduContent">Core Course: Programming Fundamentals, Problem Solving, Business Statistics with Python and Database Management and Security ...</p>
+                </div>
+                <hr class="skillCutLine">
+                <div>
+                    <p class="skillTitle"><span class="iconfont icon-chuizhi"></span>TECHNICAL SKILL</p>
+                    <div id="technicalSkill">
+                        <div class="detailSkill">Python</div>
+                        <div class="detailSkill">Java</div>
+                        <div class="detailSkill">JavaScript</div>
+                        <div class="detailSkill">HTML/CSS</div>
+                        <div class="detailSkill">SQL</div>
+                        <div class="detailSkill">Data Structure</div>
+                        <div class="detailSkill">Microsoft Office</div>
+                    </div>
+                </div>
+                <hr class="skillCutLine">
+                <div>
+                    <p class="skillTitle"><span class="iconfont icon-chuizhi"></span>LANGUAGE ABILITY</p>
+                    <div id="lanAbility">
+                        <div class="detailLan">Mandarin (first language)</div>
+                        <div class="detailLan">English (GRE: 321/340)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="verticalLine"></div>
+
+            <div id="statisticsBlock">
+                <p id="statisticsTitle"><span class="iconfont icon-verticalleftchuizhi"></span>Statistics Information (Javascript)</p>
+                <div id="dateCountBlock">
+                    <p class="statisticsContent">There are <span id="days"></span> days left before graduation.</p>
+                    <div id="daysProgressContainer">
+                        <div id="daysProgressBar"><span id="progressPastRate"></span></div>
+                    </div>
+                </div>
+                <hr class="skillCutLine">
+                <div id="scoreBlock">
+                    <p id="statisticsTitle"><span class="iconfont icon-verticalleftchuizhi"></span>Visualize Score (Javascript)</p>
+                    <div id="gpaStatBlock">
+                        <div id="uowScoreProgressContainer">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="#e6e6e6" stroke-width="20" fill="none" />
+                                <circle id="uowProgressCircle" cx="100" cy="100" r="80" stroke="#007bff" stroke-width="20" stroke-linecap="round" fill="none" stroke-dasharray="502" stroke-dashoffset="502"/>
+                            </svg>
+                            <div id="uowScoreProgressText"><span id="uowProgressGPA">0.0</span> / 7.0</div>
+                            <div id="uowScoreProgressLabel">UOW GPA</div>
+                        </div>
+                        <div id="simScoreProgressContainer">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="#e6e6e6" stroke-width="20" fill="none" />
+                                <circle id="simProgressCircle" cx="100" cy="100" r="80" stroke="#007bff" stroke-width="20" stroke-linecap="round" fill="none" stroke-dasharray="502" stroke-dashoffset="502"/>
+                            </svg>
+                            <div id="simScoreProgressText"><span id="simProgressGPA">0.0</span> / 4.0</div>
+                            <div id="simScoreProgressLabel">SIM GPA</div>
+                        </div>
+                    </div>
+                    <hr class="skillCutLine">
+                    <div id="greStatBlock">
+                        <div id="vScoreProgressContainer">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="#e6e6e6" stroke-width="20" fill="none" />
+                                <circle id="vProgressCircle" cx="100" cy="100" r="80" stroke="#007bff" stroke-width="20" stroke-linecap="round" fill="none" stroke-dasharray="502" stroke-dashoffset="502"/>
+                            </svg>
+                            <div id="vScoreProgressText"><span id="vProgressScore">0</span> / 170</div>
+                            <div id="vScoreProgressLabel">Verbal Reasoning</div>
+                        </div>
+                        <div id="qScoreProgressContainer">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="#e6e6e6" stroke-width="20" fill="none" />
+                                <circle id="qProgressCircle" cx="100" cy="100" r="80" stroke="#007bff" stroke-width="20" stroke-linecap="round" fill="none" stroke-dasharray="502" stroke-dashoffset="502"/>
+                            </svg>
+                            <div id="qScoreProgressText"><span id="qProgressScore">0</span> / 170</div>
+                            <div id="qScoreProgressLabel">Quantitative Reasoning</div>
+                        </div>
+                        <div id="awScoreProgressContainer">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="80" stroke="#e6e6e6" stroke-width="20" fill="none" />
+                                <circle id="awProgressCircle" cx="100" cy="100" r="80" stroke="#007bff" stroke-width="20" stroke-linecap="round" fill="none" stroke-dasharray="502" stroke-dashoffset="502"/>
+                            </svg>
+                            <div id="awScoreProgressText"><span id="awProgressScore">0.0</span> / 6.0</div>
+                            <div id="awScoreProgressLabel">Analytical Writing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script src="./javascript/skill.js"></script>
+
+</body>
+</html>

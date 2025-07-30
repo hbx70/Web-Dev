@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,√
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#uLink {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+#uLink:visited {
+    color: black;
+    text-decoration: none;
+}
+#uLink:hover {
+    color: #007bff;
+    text-decoration: underline;
+    text-shadow: 0 0 6px rgba(51, 153, 255, 0.5);
+}
+
+#nav {
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    padding: 2vh;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 1.0);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#navContentFirst {
+    font-size: 2vh;
+    margin-left: 10vh;
+    margin-right: 38vh;
+}
+
+#navContentRest {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+}
+
+#navContentSpan {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#currentPage {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 0.5vh 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.pageLink {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5vh 2vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pageLink:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+#photoBlock {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/home/sea1.jpeg);
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease, background-position 2s ease;
+}
+
+#photoBlock.show {
+    opacity: 1;
+    background-position: center 70%;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vh;
+}
+
+#infoBlock {
+    width: fit-content;
+    height: fit-content;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3vh 0;
+    padding: 3vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+#infoPhoto {
+    width: 10vh;
+    height: 10vh;
+    margin-bottom: 3vh;
+    background-image: url(../images/home/photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px white solid;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+#infoDetail {
+    margin-top: 5vh;
+}
+
+.information {
+    margin: 2vh 0;
+    font-size: 1.8vh;
+}
+
+.icon-youxiang, .icon-instagram, .icon-facebook-fill, .icon-dianhua, .icon-douyin {
+    color: black;
+    font-size: 3vh;
+}
+
+#iconContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons>a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    padding: 0.5vh;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+}
+
+.icons:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1)
+}
+
+#name, #aboutMeTitle, #worksTitle{
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.infoCutLine {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+#rightColum {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8vh;
+    margin-top: 3vh;
+}
+
+#aboutMeBlock {
+    width: 100vh;
+    height: fit-content;
+    background-color: #f8f9fa;
+    padding: 3vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+
+    /* begin slide in animation for aboutMeBlock container */
+    opacity: 0;
+    display: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(-50px);
+}
+
+#aboutMeInfo {
+    font-size: 1.8vh;
+}
+
+#worksBlock {
+    width: 100vh;
+    height: fit-content;
+    background-color: #f8f9fa;
+    padding: 3vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+
+    /* begin slide in animation for WorksBlcok Container*/
+    opacity: 0;
+    display: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(50px);
+}
+
+#infoBlockContainer {
+    /* begin slide in animation for infoBlock Container*/
+    opacity: 0;
+    display: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateX(-50px);
+}
+
+#worksBlock.show, #aboutMeBlock.show{
+    /* end slide in animation for WorksBlock and aboutMeBlock container */
+    /* dynamically add show class, dynamically control animation in js */
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#infoBlockContainer.show {
+    /* end slide in animation for infoBlock Container */
+    /* dynamically add show class, dynamically control animation in js */
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#worksContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vh;
+}
+
+.worksRowContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.works>img {
+    width: 18vh;
+    height: auto;
+    border-radius: 8px;
+}

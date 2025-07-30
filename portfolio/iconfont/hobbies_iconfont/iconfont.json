@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4111811",
+      "name": "代码",
+      "font_class": "code",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "11065321",
+      "name": "假期",
+      "font_class": "jiaqi",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "24105596",
+      "name": "羽毛球",
+      "font_class": "yumaoqiu",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#uLink {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+#uLink:visited {
+    color: black;
+    text-decoration: none;
+}
+#uLink:hover {
+    color: #007bff;
+    text-decoration: underline;
+    text-shadow: 0 0 6px rgba(51, 153, 255, 0.5);
+}
+
+#nav {
+    background-color: white;
+    width: 100%;
+    height: 5vh;
+    padding: 2vh;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 1.0);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#navContentFirst {
+    font-size: 2vh;
+    margin-left: 10vh;
+    margin-right: 38vh;
+}
+
+#navContentRest {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 4vh;
+}
+
+#navContentSpan {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#currentPage {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 0.5vh 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.pageLink {
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5vh 2vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pageLink:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+#photoBlock {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/skill/sea2.JPG);
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease, background-position 2s ease;
+}
+
+#photoBlock.show {
+    opacity: 1;
+    background-position: center 55%
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mainContent {
+    width: fit-content;
+    height: fit-content;
+    background-color: #f8f9fa;
+    padding: 3vh;
+    margin: 3vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+#mainContent.show {
+    opacity: 1;
+}
+
+#skillBlock {
+    width: 50%;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.skillTitle, #statisticsTitle {
+    font-size: 2vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.university {
+    display: flex;
+    justify-content: space-between;
+}
+
+.university>p {
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+.eduQualification {
+    font-style: italic;
+    font-size: 1.8vh;
+}
+
+.eduContent {
+    font-size: 1.7vh;
+    margin-left: 5vh;
+}
+
+.icon-chuizhi, .icon-verticalleftchuizhi {
+    color: #007bff;
+    font-size: 20px;
+    margin-right: 1vh;
+}
+
+.skillCutLine {
+    color: #ccc;
+    margin: 1vh 0;
+}
+
+
+#photoAndInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+#photo {
+    width: 12vh;
+    height: 12vh;
+    margin-right: 5vh;
+    background-image: url(../images/skill/photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px white solid;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+#infoContent {
+    font-size: 2vh;
+    text-align: right;
+}
+
+#technicalSkill, #lanAbility {
+    display: flex;
+}
+
+.detailSkill, .detailLan {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.6vh;
+    padding: 0.5vh 0.8vh;
+    margin: 0 1vh;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#verticalLine {
+    height: 55vh;
+    width: 3px;
+    margin: 0px 3vh;
+    background-color: #007bff;
+    border-radius: 100px;
+    opacity: 0;
+    transform: scaleY(0.1);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#verticalLine.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+#statisticsBlock {
+    width: 50%;
+    height: fit-content;
+}
+
+.statisticsContent, #progressPastRate {
+    font-size: 1.7vh;
+}
+
+#days {
+    font-weight: bold;
+}
+
+#daysProgressContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    overflow: hidden;
+}
+
+#daysProgressBar {
+    height: 100%;
+    width: 0%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #007bff;
+    transition: width 1s ease;
+}
+
+#gpaStatBlock, #greStatBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vh;
+    margin-bottom: 4vh;
+}
+
+#greStatBlock{
+    gap: 2vh
+}
+
+#uowScoreProgressContainer, #simScoreProgressContainer, #vScoreProgressContainer, #qScoreProgressContainer, #awScoreProgressContainer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+#uowProgressCircle, #simProgressCircle, #vProgressCircle, #qProgressCircle, #awProgressCircle {
+    transition: stroke-dashoffset 1.5s ease;
+}
+
+#uowScoreProgressText, #simScoreProgressText, #vScoreProgressText, #qScoreProgressText, #awScoreProgressText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#uowProgressGPA, #simProgressGPA, #vProgressScore, #qProgressScore, #awProgressScore {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#uowScoreProgressLabel, #simScoreProgressLabel, #vScoreProgressLabel, #qScoreProgressLabel, #awScoreProgressLabel {
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.7vh;
+}
